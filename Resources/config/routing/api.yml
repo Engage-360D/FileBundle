@@ -1,0 +1,3 @@
+engage360d_api_file:
+    type:     rest
+    resource: Engage360d\Bundle\FileBundle\Controller\Api\FileController

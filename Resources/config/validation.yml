@@ -1,0 +1,5 @@
+Engage360d\Bundle\FileBundle\Entity\File:
+    properties:
+        file:
+            - NotBlank: ~
+            - File: ~

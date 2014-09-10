@@ -1,0 +1,14 @@
+parameters:
+    engage360d_file.directory_namer.class: Engage360d\Bundle\FileBundle\Utils\DirectoryNamer
+    engage360d_file.file_saving.listener.class: Engage360d\Bundle\FileBundle\EventListener\FileSavingListener
+
+services:
+    engage360d_file.directory_namer:
+        class: %engage360d_file.directory_namer.class%
+        arguments: [@service_container]
+
+    engage360d_file.file_saving.listener:
+        class: %engage360d_file.file_saving.listener.class%
+        arguments: [@service_container]
+        tags:
+            - { name: doctrine.event_listener, event: postPersist }

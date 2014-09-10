@@ -1,0 +1,26 @@
+{
+    "name": "engage360d/file-bundle",
+    "type": "symfony-bundle",
+    "description": "A very simple bundle to handle file upload",
+    "license": "MIT",
+    "keywords": ["Engage", "360D", "file", "upload"],
+    "homepage": "http://github.com/engage-360d",
+
+    "authors": [
+        {
+            "name": "Alexey Ryzhkov",
+            "email": "alioch@yandex.ru"
+        }
+    ],
+
+    "autoload": {
+        "psr-0": {
+            "Engage360d\\Bundle\\FileBundle": ""
+        }
+    },
+
+    "minimum-stability": "dev",
+
+    "target-dir": "Engage360d/Bundle/FileBundle"
+}
+
